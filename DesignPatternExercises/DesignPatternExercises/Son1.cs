@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace DesignPatternExercises
 {
-    class Program
+    class Son1 : Parent
     {
-        static void Main(string[] args)
+        public override void grow()
         {
-            Console.WriteLine("Hello world!");
-            new Son1().grow();
-            Console.ReadKey();
+            base.y++;
+            base.z++;
+            base.grow();
         }
+
     }
 }
